@@ -1,0 +1,30 @@
+{
+  "name": "nombre_del_proyecto",
+  "version": "1.0.0",
+  "description": "Proyecto con Gulp y SASS",
+  "main": "index.js",
+  "scripts": {
+    "css": "gulp css",
+    "dev": "gulp dev"
+  },
+  "author": "Esteban Gonzalez",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-avif": "^1.1.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "postcss": "^8.4.21",
+    "sass": "^1.58.3"
+  },
+  "dependencies": {
+    "gulp-terser-js": "^5.2.2"
+  }
+}

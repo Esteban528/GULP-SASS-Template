@@ -1,0 +1,46 @@
+/* En SCSS, los mixins son bloques de código reutilizable que se pueden definir y utilizar en múltiples lugares de un archivo de estilo. Se definen con la directiva @mixin seguida del nombre del mixin y los argumentos que acepta, y se utilizan con la directiva @include seguida del nombre del mixin y los argumentos que se le pasan. Los mixins en SCSS son útiles para reducir la repetición de código y mejorar la legibilidad del archivo de estilo. */
+@use 'base/variables' as v;
+
+// @mixin heading ($color:blue){
+
+//     text-transform: uppercase;
+//     font-size: 2.4rem;
+//     color: $color;
+//     letter-spacing: 1px;
+// }
+
+@mixin telefono {
+    @media (min-width: v.$telefono) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+@mixin desktopXL {
+    @media (min-width: v.$desktopXL) {
+        @content;
+    }
+}
+
+@mixin grid ($columns, $gap){
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
+
+@mixin resetear-lista{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
